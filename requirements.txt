@@ -2,3 +2,4 @@ streamlit
 pandas
 pdfminer.six
 streamlit-tags
+ 

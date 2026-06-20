@@ -12,7 +12,7 @@ st.markdown("""
     <style>
     /* Background Gradient */
     .stApp {
-        background: linear-gradient(135deg, #f0f2f6 0%, #dbe2ef 100%);
+        background: linear-gradient(135deg, #f0f2f6 0%, #dbe2ef 100%); 
     }
     /* Buttons ko animated banane ke liye */
     div.stButton > button:hover {

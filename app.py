@@ -99,7 +99,7 @@ def run():
 
             st.success(f"Parsing Complete for: {extracted_name}")
             
-            # Case-insensitive technical skills detection loop
+            # Case-insensitive technical skills detection loop 
             extracted_skills = []
             for skill in MASTER_SKILLS:
                 if skill.lower() in resume_text.lower():

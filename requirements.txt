@@ -1,5 +1,5 @@
 streamlit
 pandas
-pdfminer.six
+pdfminer3
 streamlit-tags
  

@@ -115,7 +115,7 @@ def run():
                 st.text(f"Candidate Name: {extracted_name}")
                 st.text(f"Email Address: {extracted_email}") 
                 st.text(f"Contact Number: {extracted_mobile}") 
-                st.text("Target Degree: B.E. Computer Science Engineering")
+                st.text("Target Degree: {extracted_degree}")
                 st.text(f"Total Document Pages: {total_pages}")
                 
                 # Feature 1: Dynamic Role Matching Matrix

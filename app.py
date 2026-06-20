@@ -8,6 +8,29 @@ from pdfminer3.layout import LAParams
 from pdfminer3.pdfpage import PDFPage
 from pdfminer3.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer3.converter import TextConverter
+st.markdown("""
+    <style>
+    /* Background Gradient */
+    .stApp {
+        background: linear-gradient(135deg, #f0f2f6 0%, #dbe2ef 100%);
+    }
+    /* Buttons ko animated banane ke liye */
+    div.stButton > button:hover {
+        transform: scale(1.05);
+        background-color: #007bff;
+        color: white;
+        transition: 0.3s;
+    }
+    /* Cards ko Glassmorphism look dene ke liye */
+    div[data-testid="stVerticalBlock"] {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
 # Page Configuration Layout
 st.set_page_config(

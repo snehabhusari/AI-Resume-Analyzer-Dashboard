@@ -91,6 +91,11 @@ def run():
             
             phone_match = re.search(r'(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}', resume_text)
             extracted_mobile = phone_match.group(0) if phone_match else "Not Found in PDF"
+
+            degree_match = re.search(r'(B\.?Tech|M\.?Tech|B\.?E|B\.?Sc|M\.?Sc|BCA|MCA|PhD)', resume_text, re.IGNORECASE)
+            extracted_degree = degree_match.group(0) if degree_match else "Not Mentioned"
+            
+            lines = [line.strip() for line in resume_text.split('\n') if line.strip()]
             
             lines = [line.strip() for line in resume_text.split('\n') if line.strip()]
             extracted_name = lines[0] if lines else "Sneha Bhusari"
